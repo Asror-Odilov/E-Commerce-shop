@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.App{
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* ////////////////// Style for Links ////////////////// */
+
+.link{
+    color: black !important;
+    text-decoration: none;
+}
+
+.link-white {
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    padding: 1rem;    
+}
+.link-white:hover{
+    color: black !important;
+}
+
+.link-black{
+    color: black !important;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 1rem;
+}
+.link-black:hover{
+    color: white !important;
+}
+
+
+
+/* ////////////////// For Button ////////////////// */
+.slide{
+  position: relative;
+  background-color: rgb(0, 143, 143);
+  width: 200px;
+  height: 50px;
+  border-radius: 2px;
+  transform: translate(-80%, 0);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  }
+
+
+.button {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 8px 0;
+  transition: all 0.7s ease;
+ 
+}
+.button:hover .slide{
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.button:hover .text{
+  color: rgb(233, 233, 233);
+}
+.button:hover .arrow{
+  color: rgb(233, 233, 233);
+  transform: scale(2);
+  margin-top: -2rem;
+}
+
+.arrow {
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  height: 50px;
+  padding: 1rem;
+  margin-top: -15px;
+  margin-left: -8rem;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+}
+
+.text{
+  position: absolute;
+  margin-left: 1rem;
+  transition: all 0.4s ease-in-out;
+  font-size: 1.2rem;
+}
+
+
+/* ////////////////// For Entry Layer ///////////////// */
+
+.cover{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.cover0{
+  background-color: rgb(255, 255, 255);
+}
+.cover1{
+  background-color: rgb(7, 240, 248);
+}
+.cover2{
+    background-color: rgb(0, 187, 187);
+}
+
+
+
+.unvisible{
+  transform: translate(0, -100vh);
+
+}
+
+.box{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 2000;
+  left: 15rem;
+  background-color: rgb(133, 10, 10);
+}
